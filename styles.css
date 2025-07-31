@@ -331,7 +331,7 @@ body {
     height: 220px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-180px);
+    transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-350px);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -897,14 +897,14 @@ border: 1px solid #b3d4fc;
     }
     
     .wheel-container {
-        width: 300px;
-        height: 300px;
+        width: 600px;
+        height: 600px;
     }
     
     .wheel-segment {
         width: 180px;
         height: 180px;
-        transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-180px);
+        transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-250px);
     }
     
     .segment-content i {
@@ -1005,11 +1005,6 @@ border: 1px solid #b3d4fc;
         height: 15px;
     }
     
-    .wheel-segment {
-        width: 4px;
-        height: 4px;
-        transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-180px); /* reduced from 180px */
-    }
     
     
     .wheel-center {

@@ -255,30 +255,20 @@ function handleKeyboardShortcuts(e) {
         }
     }
 }
-function setInitialWheelPositions(radius = -190) {
-    const wheelSegments = document.querySelectorAll('.wheel-segment');
-
-    wheelSegments.forEach(segment => {
-        const rotation = segment.style.getPropertyValue('--rotation');
-        segment.style.transform = `translate(-50%, -50%) rotate(${rotation}) translateY(${radius}px) scale(1)`;
-    });
-}
-
-
 
 // Add simple hover effects for wheel segments
 function addWheelHoverEffects() {
-    const wheelSegments = document.querySelectorAll('.wheel-segment');
-    setInitialWheelPositions
-    wheelSegments.forEach(segment => {
-        segment.addEventListener('mouseenter', () => {
-            segment.style.transform = `translate(-10%, -10%) rotate(${segment.style.getPropertyValue('--rotation')}) translateY(-190px) scale(1.1)`;
-        });
+    // const wheelSegments = document.querySelectorAll('.wheel-segment');
+    
+    // wheelSegments.forEach(segment => {
+    //     segment.addEventListener('mouseenter', () => {
+    //         segment.style.transform = `translate(-50%, -50%) rotate(${segment.style.getPropertyValue('--rotation')}) translateY(-350px) scale(1.1)`;
+    //     });
         
-        segment.addEventListener('mouseleave', () => {
-            segment.style.transform = `translate(-10%, -10%) rotate(${segment.style.getPropertyValue('--rotation')}) translateY(-190px) scale(1)`;
-        });
-    });
+    //     segment.addEventListener('mouseleave', () => {
+    //         segment.style.transform = `translate(-50%, -50%) rotate(${segment.style.getPropertyValue('--rotation')}) translateY(-350px) scale(1)`;
+    //     });
+    // });
 }
 
 // Add particle effect for welcome page
@@ -338,7 +328,6 @@ document.head.appendChild(particleStyle);
 // Initialize additional features
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Adding additional features...');
-    setInitialWheelPositions(); 
     addWheelHoverEffects();
     addParticleEffect();
 });
