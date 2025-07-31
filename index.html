@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumitra Agrawal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="page active">
+        <div class="matrix-bg"></div>
+        <div class="welcome-content">
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="photo.jpg" alt="Saumitra Agrawal" class="profile-image">
+                    <div class="image-glow"></div>
+                </div>
+                <h1 class="name">SAUMITRA AGRAWAL</h1>
+                <div class="designation">
+                    <span class="title">B.Tech. Artificial Intelligence and Data Science</span>
+                    <span class="institution">IIT JODHPUR</span>
+                </div>
+                <div class="typing-text">
+                    <span id="typing-cursor">|</span>
+                </div>
+            </div>
+            <button id="enter-btn" class="enter-button">
+                <span>Enter Portfolio</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Circular Navigation Wheel -->
+    <div id="nav-wheel" class="nav-wheel">
+        <div class="wheel-container">
+            <div class="wheel-center">
+                <h2>Portfolio</h2>
+                <button id="close-wheel" class="close-wheel-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="wheel-segments">
+                <div class="wheel-segment" data-page="resume" style="--rotation: 0deg; transform: translate(-50%, -50%) rotate(0deg) translateY(-190px) scale(1);">
+                  <div class="segment-content">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                  </div>
+                </div>
+              
+                <div class="wheel-segment" data-page="experience" style="--rotation: 72deg; transform: translate(-50%, -50%) rotate(72deg) translateY(-190px) scale(1);">
+                  <div class="segment-content">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                  </div>
+                </div>
+              
+                <div class="wheel-segment" data-page="github" style="--rotation: 144deg; transform: translate(-50%, -50%) rotate(144deg) translateY(-190px) scale(1);">
+                  <div class="segment-content">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                  </div>
+                </div>
+              
+                <div class="wheel-segment" data-page="linkedin" style="--rotation: 216deg; transform: translate(-50%, -50%) rotate(216deg) translateY(-190px) scale(1);">
+                  <div class="segment-content">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </div>
+                </div>
+              
+                <div class="wheel-segment" data-page="contact" style="--rotation: 288deg; transform: translate(-50%, -50%) rotate(288deg) translateY(-190px) scale(1);">
+                  <div class="segment-content">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                  </div>
+                </div>
+            </div>              
+        </div>
+    </div>
+
+    <!-- Resume Page -->
+    <div id="resume-page" class="page">
+        <div class="resume-layout">
+            <!-- Left Sidebar -->
+            <div class="resume-sidebar">
+                <div class="sidebar-header">
+                    <button class="back-btn" data-back="nav">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back</span>
+                    </button>
+                    <h2>Resume</h2>
+                </div>
+                <div class="sidebar-content">
+                    <div class="resume-section">
+                        <h3><i class="fas fa-user"></i> Personal Info</h3>
+                        <div class="info-item">
+                            <span class="label">Name:</span>
+                            <span class="value">Saumitra Agrawal</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="value">agrawal.ma40@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Phone:</span>
+                            <span class="value">+91 7067635970</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span class="value">Jodhpur, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="education-item">
+                            <h4 style="color: white;">B.Tech. Artificial Intelligence and Data Science</h4>
+                            <p class="institution">IIT Jodhpur</p>
+                            <p class="cgpa">CGPA: 8.37</p>
+                            <p class="duration">2022 - 2026</p>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h3><i class="fas fa-code"></i> Skills</h3>
+                      
+                        <div class="skill-category">
+                          <h4>Programming Languages</h4>
+                          <div class="skills-grid">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">C/C++</div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">HTML</div>
+                            <div class="skill-tag">CSS</div>
+                            <div class="skill-tag">SQL (MySQL, PostgreSQL)</div>
+                          </div>
+                        </div>
+                      
+                        <div class="skill-category">
+                          <h4>Data Structures & Algorithms</h4>
+                          <div class="skills-grid">
+                            <div class="skill-tag">Data Structures</div>
+                            <div class="skill-tag">Graph Theory</div>
+                            <div class="skill-tag">Object-Oriented Programming</div>
+                            <div class="skill-tag">Advanced Algorithms</div>
+                          </div>
+                        </div>
+                      
+                        <div class="skill-category">
+                          <h4>Machine Learning & AI</h4>
+                          <div class="skills-grid">
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Deep Learning</div>
+                            <div class="skill-tag">NLP</div>
+                            <div class="skill-tag">Computer Vision</div>
+                            <div class="skill-tag">Transformers</div>
+                            <div class="skill-tag">LLMs</div>
+                            <div class="skill-tag">PEFT</div>
+                            <div class="skill-tag">Generative Models</div>
+                            <div class="skill-tag">Data Pipelines</div>
+                            <div class="skill-tag">Dependable AI</div>
+                          </div>
+                        </div>
+                      
+                        <div class="skill-category">
+                          <h4>Frameworks & Libraries</h4>
+                          <div class="skills-grid">
+                            <div class="skill-tag">PyTorch</div>
+                            <div class="skill-tag">HuggingFace Transformers</div>
+                            <div class="skill-tag">Scikit-learn</div>
+                            <div class="skill-tag">NumPy</div>
+                            <div class="skill-tag">Pandas</div>
+                            <div class="skill-tag">OpenCV</div>
+                          </div>
+                        </div>
+                      
+                        <div class="skill-category">
+                          <h4>DevOps & Tools</h4>
+                          <div class="skills-grid">
+                            <div class="skill-tag">Docker</div>
+                            <div class="skill-tag">GitHub Actions</div>
+                            <div class="skill-tag">FastAPI</div>
+                            <div class="skill-tag">Streamlit</div>
+                            <div class="skill-tag">React.js</div>
+                            <div class="skill-tag">AWS (S3, Lambda, EC2, ECR, RDS)</div>
+                            <div class="skill-tag">WireShark</div>
+                            <div class="skill-tag">Pinecone</div>
+                            <div class="skill-tag">PG Vector</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    
+                    <div class="resume-section">
+                        <h3><i class="fas fa-download"></i> Download Resume</h3>
+                        <a href="https://drive.google.com/file/d/1SUc1ccYc-l5FHuiPbE0Q9ReRi-o30ARC/view?usp=sharing" target="_blank" class="download-btn">
+                            <i class="fas fa-file-pdf"></i>
+                            Download PDF Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="resume-main">
+                <div class="resume-header">
+                    <h1 class="resume-name">SAUMITRA AGRAWAL</h1>
+                    <p class="resume-title">AI & Data Science Engineer</p>
+                </div>
+                
+                <div class="resume-content">
+                    <div class="content-section">
+                        <h2><i class="fas fa-user-tie"></i> Profile</h2>
+                        <p>I'm a B.Tech student in AI and Data Science at IIT Jodhpur, with hands-on experience from internships at Mindflix AI and DRPCRD Corp., where I worked on LLMs, visual dubbing, and full-stack AI pipelines. I’ve built projects like an image search app using RAG, a legal chatbot (LlamaLawyer), and a sentiment analysis tool. I'm skilled in Python, PyTorch, FastAPI, AWS, and more. Selected for Amazon ML Summer School 2024, I’ve also solved 350+ LeetCode problems and led the marketing team for TEDx IITJ.</p>
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                        <div class="experience-item">
+                            <h3>Artificial Intelligence Engineering Internship</h3>
+                            <p class="company">
+                                <a href="https://www.mindflix.ai/" target="_blank" rel="noopener noreferrer" style="color: #1a73e8; text-decoration: none;">
+                                  Mindflix AI
+                                </a>
+                              </p>                              
+                            <p class="duration">May 2025- June 2025</p>
+                            <ul>
+                                <li>Finetuned visual dubbing and voice cloning open-sourced models on Indian language datasets.</li>
+                                <li>Developed a complete data curation pipeline to collect data in local Indian languages.</li>
+                                <li>Supported creation of end to end pipeline using AWS services and trained models for commercial purposes.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Software Engineering Internship</h3>
+                            <p class="company">
+                                <a href="https://www.linkedin.com/company/drpcrd/posts/?feedView=all" target="_blank" rel="noopener noreferrer" style="color: #1a73e8; text-decoration: none;">
+                                  DRPCRD™
+                                </a>
+                              </p>
+                            <p class="duration">February 2025- April 2025</p>
+                            <ul>
+                                <li>Finetuned a LLM model to built a parsing and QnA specialized chat bot.</li>
+                                <li>Built a robust, end to Pipeline using PostGreSQL, Vector Database, Docker Images, Github CI/CD actions and FastAPI and deployed it into production.</li>
+                            </ul>
+                        </div>
+                        <!-- Add more experience items as needed -->
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+                        <div class="project-item">
+                            <h3>IMAGE SEARCH APP using Retrieval Augmented Generation</h3>
+                            <p>–Built an end-to-end Image Search and Caption Generation system with FastAPI, Streamlit, Pinecone VectorDB.<br>–Developed scalable APIs for image uploads, captioning, and embedding-based retrieval with OOP principles.<br>–Created a demo notebook for seamless deployment, API interactions, and backend operations.</p>
+                        </div>
+                        <div class="project-item">
+                            <h3>LlamaLawyer: Llama based chat bot specialized in Indian law and services</h3>
+                            <p>– Developed a Llama based chat bot to help people solve their general Law queries along with PDF reader feature.<br>– Fine-tuned Llama 70B via PEFT (rank=4, aplha=16) on 2.5K Indian law queries for chatbot inference.<br>– Undergoing cloud and website based implementation and further experiments with models and ranks.</p>
+                        </div>
+                        <div class="project-item">
+                            <h3>Sentiment Analysis Software</h3>
+                            <p>–Built a sentiment analysis model trained on kaggle dataset of 100,000 tweets, classifying emotional tone.<br>– Parallel ensemble implementation of 5 classifiers and achieved accuracy of 81% in test dataset.<br>– Website implementation along with real time analysis of user given statement and prediction.</p>
+                        </div>
+                        <!-- Add more project items as needed -->
+                    </div>
+                    
+                    <div class="content-section">
+                        <h2><i class="fas fa-trophy"></i> Achievements</h2>
+                        <ul class="achievements-list">
+                            <li>Selected in AMAZON ML SUMMER SCHOOL 2024 among the 60,000 applicants.</li>
+                            <li>JEE Advance AIR- 6166. among 1 Million applicants.</li>
+                            <li>Leetcode- More than 350 DSA based problems solved on the platform.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="resume-controls-sidebar">
+                <div class="controls-header">
+                    <h3>Controls</h3>
+                </div>
+                <div class="controls-content">
+                    <button id="zoom-in" class="control-btn">
+                        <i class="fas fa-search-plus"></i>
+                    </button>
+                    <button id="zoom-out" class="control-btn">
+                        <i class="fas fa-search-minus"></i>
+                    </button>
+                    <button id="reset-zoom" class="control-btn">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                    <div class="zoom-level">100%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience Page -->
+    <div id="experience-page" class="page">
+        <div class="page-header">
+            <button class="back-btn" data-back="nav">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+            </button>
+            <h2>Work Experience</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-card">
+          
+              <!-- Mindflix AI -->
+              <div class="contact-item" style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 30px;">
+                <img src="mindflix_ai_logo.jpg" alt="Mindflix AI Logo" 
+                     style="width: 40px; height: 40px; object-fit: contain; border-radius: 6px; background-color: #fff; flex-shrink: 0;">
+                <div class="contact-info">
+                  <h4>
+                    <a href="https://www.mindflix.ai/" target="_blank" rel="noopener noreferrer"
+                       style="color: #4facfe; text-decoration: none; background: linear-gradient(to right, #4facfe, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">
+                      Mindflix AI
+                    </a>
+                  </h4>
+                  <h5>Artificial Intelligence Engineering Internship</h5>
+                  <ul style="padding-left: 20px; color: #ccc; margin: 0;">
+                    <li>Finetuned visual dubbing and voice cloning models on Indian language datasets.</li>
+                    <li>Created a complete data curation pipeline for local Indian languages.</li>
+                    <li>Built an end-to-end AWS pipeline for model training and commercial use.</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <!-- DRPCRD -->
+              <div class="contact-item" style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 30px;">
+                <img src="drpcrd_logo.jpg" alt="DRPCRD Logo" 
+                     style="width: 40px; height: 40px; object-fit: contain; border-radius: 6px; background-color: #fff; flex-shrink: 0;">
+                <div class="contact-info">
+                  <h4>
+                    <a href="https://www.linkedin.com/company/drpcrd/posts/?feedView=all" target="_blank" rel="noopener noreferrer"
+                       style="color: #4facfe; text-decoration: none; background: linear-gradient(to right, #4facfe, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600;">
+                      DRPCRD™
+                    </a>
+                  </h4>
+                  <h5>Software Engineering Internship</h5>
+                  <ul style="padding-left: 20px; color: #ccc; margin: 0;">
+                    <li>Finetuned a LLM model to build a parsing and QnA specialized chatbot.</li>
+                    <li>Designed a complete pipeline using PostgreSQL, Vector DB, Docker, GitHub Actions, and FastAPI.</li>
+                    <li>Deployed the full system into production.</li>
+                  </ul>
+                </div>
+              </div>
+          
+            </div>
+          </div>          
+    </div>
+
+    <!-- GitHub Page -->
+    <div id="github-page" class="page">
+        <div class="page-header">
+            <button class="back-btn" data-back="nav">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+            </button>
+            <h2>GitHub Profile</h2>
+        </div>
+        <div class="github-content">
+            <div class="profile-link-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub Profile</h3>
+                <p>Check out my projects and contributions on GitHub</p>
+                <a href="https://github.com/saumitr16" target="_blank" class="profile-link">
+                    github.com/saumitr16
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LinkedIn Page -->
+    <div id="linkedin-page" class="page">
+        <div class="page-header">
+            <button class="back-btn" data-back="nav">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+            </button>
+            <h2>LinkedIn Profile</h2>
+        </div>
+        <div class="linkedin-content">
+            <div class="profile-link-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn Profile</h3>
+                <p>Connect with me on LinkedIn</p>
+                <a href="https://linkedin.com/in/saumitra-agrawal-63bb51256/" target="_blank" class="profile-link">
+                    linkedin.com/in/saumitra-agrawal
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" class="page">
+        <div class="page-header">
+            <button class="back-btn" data-back="nav">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+            </button>
+            <h2>Contact Details</h2>
+        </div>
+        <div class="contact-content">
+            <div class="contact-card">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-info">
+                        <h4>Phone Number</h4>
+                        <a href="tel:+917067635970">+91 7067635970</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-info">
+                        <h4>Primary Email</h4>
+                        <a href="mailto:agrawal.ma40@gmail.com">agrawal.ma40@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="contact-info">
+                        <h4>Academic Email</h4>
+                        <a href="mailto:b22ai054@iitj.ac.in">b22ai054@iitj.ac.in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
